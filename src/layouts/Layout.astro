@@ -1,4 +1,7 @@
 ---
+// Supports weights 100-900
+import "@fontsource-variable/onest";
+
 import Header from "../components/Header.astro";
 
 import { ViewTransitions } from "astro:transitions";
@@ -31,9 +34,14 @@ const { title, description } = Astro.props;
       is:inline
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
     ></script>
-  </body><style is:global>
-    :root {
-      color-scheme: light;
-    }
-  </style>
+    <style is:global>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        font-family: "Onest Variable", sans-serif;
+      }
+    </style>
+  </body>
 </html>
