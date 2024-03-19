@@ -3,44 +3,51 @@ const carruselItems = [
   {
     img: "/carrusel1.webp",
     alt: "Telecomunicaciones",
+    servicio: "Servicios de",
     title: "Telecomunicaciones",
     Parrafo: "Mejora tu habilidad tecnológica, adapta y únete a la innovación para mantenerte relevante y competitivo en un mundo en constante cambio",
   },
   {
     img: "/carrusel2.webp",
     alt: "Edificios",
+    servicio: "Telecomunicaciones para",
     title: "Edificios",
     Parrafo: "Mejora comunicaciones con instalaciones de telecomunicaciones y redes blandas, añadiendo seguridad de acceso, antiincendios y videovigilancia.",  },
   {
     img: "/carrusel3.webp",
     alt: "Constructoras",
+    servicio: "Telecomunicaciones para",
     title: "Constructoras",
     Parrafo: "Soluciones completas para construcción: comunicaciones, seguridad y consultoría especializada para máxima eficiencia y seguridad.",
   },
   {
     img: "/carrusel4.webp",
     alt: "Servicios Personalizados",
+    servicio: "Telecomunicaciones para",
     title: "Servicios Personalizados",
     Parrafo: "Innova tu hogar con soluciones para proyectos pequeños: automatización, accesos inteligentes, seguridad, CCTV y portones automáticos.",
   },
 ];
 ---
 
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
+<div id="default-carousel" class="relative w-full z-10" data-carousel="slide">
   <!-- Carousel wrapper -->
   <div class="relative h-[500px] sm:h-[750px] overflow-hidden rounded-lg">
     {
       carruselItems.map((carrusel) => (
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src={carrusel.img}
             class="absolute block w-full h-full object-cover top-0 left-0"
             alt={carrusel.alt}
           />
-          <div class="absolute top-0 left-0 w-full h-full bg-red-300 opacity-50" />
+          <div class="absolute top-0 left-0 w-full h-full bg-yellow-300/50 opacity-50" />
           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center py-4 px-4 max-w-[750px] min-w-[300px] sm:h-[250px] shadow-lg bg-gray-200/90 rounded-xl">
-            <h1 class="text-3xl sm:text-[45pt] font-bold text-red-500 sm:leading-[70px]">{carrusel.title}</h1>
-            <p class="text-sm sm:text-xl mt-2 font-medium text-pretty py-4 text-gray-900 ">
+            <h1 class="flex flex-col text-3xl sm:text-[45pt] font-bold text-red-500 sm:leading-[70px]">
+              <span class="sm:text-xl text-sm text-gray-950">{carrusel.servicio}</span>
+              <span>{carrusel.title}</span>
+              </h1>
+            <p class="text-sm sm:text-xl mt-2 font-medium text-pretty py-4 text-gray-950 ">
               {carrusel.Parrafo}
             </p>
           </div>
@@ -50,7 +57,7 @@ const carruselItems = [
   </div>
   <!-- Slider indicators -->
   <div
-    class="absolute z-20 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
   >
     {
       carruselItems.map((carrusel) => (
@@ -66,3 +73,4 @@ const carruselItems = [
     
   </div>
 </div>
+
