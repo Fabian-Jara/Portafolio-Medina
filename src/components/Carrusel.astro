@@ -5,27 +5,32 @@ const carruselItems = [
     alt: "Telecomunicaciones",
     servicio: "Servicios de",
     title: "Telecomunicaciones",
-    Parrafo: "Mejora tu habilidad tecnológica, adapta y únete a la innovación para mantenerte relevante y competitivo en un mundo en constante cambio",
+    Parrafo:
+      "Mejora tu habilidad tecnológica, adapta y únete a la innovación para mantenerte relevante y competitivo en un mundo en constante cambio",
   },
   {
     img: "/carrusel2.webp",
     alt: "Edificios",
     servicio: "Telecomunicaciones para",
     title: "Edificios",
-    Parrafo: "Mejora comunicaciones con instalaciones de telecomunicaciones y redes blandas, añadiendo seguridad de acceso, antiincendios y videovigilancia.",  },
+    Parrafo:
+      "Mejora comunicaciones con instalaciones de telecomunicaciones y redes blandas, añadiendo seguridad de acceso, antiincendios y videovigilancia.",
+  },
   {
     img: "/carrusel3.webp",
     alt: "Constructoras",
     servicio: "Telecomunicaciones para",
     title: "Constructoras",
-    Parrafo: "Soluciones completas para construcción: comunicaciones, seguridad y consultoría especializada para máxima eficiencia y seguridad.",
+    Parrafo:
+      "Soluciones completas para construcción: comunicaciones, seguridad y consultoría especializada para máxima eficiencia y seguridad.",
   },
   {
     img: "/carrusel4.webp",
     alt: "Servicios Personalizados",
     servicio: "Telecomunicaciones para",
     title: "Servicios Personalizados",
-    Parrafo: "Innova tu hogar con soluciones para proyectos pequeños: automatización, accesos inteligentes, seguridad, CCTV y portones automáticos.",
+    Parrafo:
+      "Innova tu hogar con soluciones para proyectos pequeños: automatización, accesos inteligentes, seguridad, CCTV y portones automáticos.",
   },
 ];
 ---
@@ -41,12 +46,14 @@ const carruselItems = [
             class="absolute block w-full h-full object-cover top-0 left-0"
             alt={carrusel.alt}
           />
-          <div class="absolute top-0 left-0 w-full h-full bg-yellow-300/50 opacity-50" />
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center py-4 px-4 max-w-[750px] min-w-[300px] sm:h-[250px] shadow-lg bg-gray-200/90 rounded-xl">
+          <div class="absolute top-0 left-0 w-full h-full bg-gray-300/50 opacity-50" />
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center py-4 px-4 max-w-[750px] min-w-[300px] sm:min-h-[250px] shadow-lg bg-gray-200/90 rounded-xl">
             <h1 class="flex flex-col text-3xl sm:text-[45pt] font-bold text-red-500 sm:leading-[70px]">
-              <span class="sm:text-xl text-sm text-gray-950">{carrusel.servicio}</span>
+              <span class="sm:text-xl text-sm text-gray-950/70">
+                {carrusel.servicio}
+              </span>
               <span>{carrusel.title}</span>
-              </h1>
+            </h1>
             <p class="text-sm sm:text-xl mt-2 font-medium text-pretty py-4 text-gray-950 ">
               {carrusel.Parrafo}
             </p>
@@ -70,7 +77,5 @@ const carruselItems = [
         />
       ))
     }
-    
   </div>
 </div>
-
