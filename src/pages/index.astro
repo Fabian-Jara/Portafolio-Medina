@@ -3,7 +3,8 @@ import Layout from "../layouts/Layout.astro";
 
 import Carrusel from "../components/Carrusel.astro";
 import Presentacion from "../components/Presentacion.astro";
-import Funciones from "../components/Funciones.astro";
+import FuncionesSm from "../components/FuncionesSm.astro";
+import FuncionesXs from "../components/FuncionesXs.astro";
 ---
 
 <Layout
@@ -19,8 +20,12 @@ import Funciones from "../components/Funciones.astro";
       <Presentacion />
     </div>
 
-    <div class="bg-red-500">
-      <Funciones />
+    <div class="bg-red-500 sm:block hidden">
+      <FuncionesSm />
+    </div>
+
+    <div class="bg-red-500 block sm:hidden">
+      <FuncionesXs />
     </div>
 
     <br />
