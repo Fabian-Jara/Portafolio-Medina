@@ -14,7 +14,7 @@ const carruselItems = [
     servicio: "Telecomunicaciones para",
     title: "Edificios",
     Parrafo:
-      "Mejora comunicaciones con instalaciones de telecomunicaciones y redes blandas, añadiendo seguridad de acceso, antiincendios y videovigilancia.",
+      "Mejora comunicaciones con instalaciones de telecomunicaciones y redes blandas, añadiendo seguridad de acceso, Antiincendios y Videovigilancia.",
   },
   {
     img: "/carrusel3.webp",
@@ -35,7 +35,12 @@ const carruselItems = [
 ];
 ---
 
-<div id="default-carousel" class="relative w-full z-10" data-carousel="slide">
+<div
+  id="default-carousel"
+  class="relative w-full z-10"
+  data-carousel="slide"
+  data-carousel-interval="8000"
+>
   <!-- Carousel wrapper -->
   <div class="relative h-[500px] sm:h-[750px] overflow-hidden rounded-lg">
     {

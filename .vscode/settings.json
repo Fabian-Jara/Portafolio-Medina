@@ -1,3 +1,16 @@
 {
-  "cSpell.words": ["flowbite", "tailwindcss"]
+  "cSpell.words": [
+    "astrojs",
+    "Cctv",
+    "flowbite",
+    "fontsource",
+    "nowrap",
+    "onest",
+    "tailwindcss",
+    "Videovigilancia",
+    "webp"
+  ],
+  "cSpell.enableFiletypes": [
+    "!astro"
+  ]
 }
