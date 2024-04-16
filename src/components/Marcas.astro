@@ -1,0 +1,24 @@
+---
+import DahuaIcon from "./icons/Dahua.astro";
+import HikvisionIcon from "./icons/Hikvision.astro";
+import AjaxIcon from "./icons/Ajax.astro";
+import BoschIcon from "./icons/Bosch.astro";
+---
+
+<div class="max-w-[1240px] mx-auto sm:my-32 my-10 px-4">
+  <div class="flex flex-col items-center py-4">
+    <h1
+      class="text-center sm:text-[45pt] text-3xl font-serif font-bold sm:leading-[4rem] text-yellow-300 pb-4"
+    >
+      Nuestras Marcas
+    </h1>
+    <hr class="sm:border-4 border-2 rounded-3xl w-32 border-yellow-300" />
+  </div>
+
+  <div class="flex flex-wrap justify-center sm:space-x-12">
+    <DahuaIcon class="sm:size-64 size-44 pr-4" />
+    <HikvisionIcon class="sm:size-64 size-44 pl-4" />
+    <AjaxIcon class="sm:size-64 size-44 pr-4" />
+    <BoschIcon class="sm:size-64 size-44 pl-4" />
+  </div>
+</div>
