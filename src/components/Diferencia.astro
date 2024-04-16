@@ -1,0 +1,56 @@
+---
+import CheckIcon from "../components/icons/Check.astro";
+import CheckListIcon from "../components/icons/CheckList.astro";
+import BriefcaseIcon from "../components/icons/Briefcase.astro";
+---
+
+<div class="px-4">
+  <div
+    class="flex bg-[url('/camara1.webp')] bg-cover bg-center max-w-[1240px] mx-auto rounded-t-2xl"
+  >
+    <div
+      class="flex flex-wrap w-full sm:justify-center sm:space-x-20 space-y-4 bg-yellow-300/50 px-4 sm:py-32 py-10 text-gray-950 rounded-t-2xl"
+    >
+      <div class="flex items-center">
+        <CheckIcon class="sm:size-28 size-14" />
+        <div>
+          <h1 class="font-bold sm:text-4xl text-2xl">+1000</h1>
+          <p class="text-xl">Recomendaciones</p>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <CheckListIcon class="sm:size-28 size-14" />
+        <div>
+          <h1 class="font-bold sm:text-4xl text-2xl">+1200</h1>
+          <p class="text-xl">Proyectos</p>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <BriefcaseIcon class="sm:size-28 size-14" />
+        <div>
+          <h1 class="font-bold sm:text-4xl text-2xl">+20</h1>
+          <p class="text-xl">Años de experiencia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex justify-center max-w-[1240px] mx-auto rounded-b-2xl bg-red-500"
+  >
+    <div class="flex flex-col items-center py-12 px-4 text-gray-100">
+      <h1
+        class="text-center sm:text-[45pt] sm:text-3xl text-2xl font-serif font-bold sm:leading-[4rem] pb-4"
+      >
+        Estás en el lugar correcto
+      </h1>
+      <hr class="sm:border-4 border-2 rounded-3xl w-32 border-yellow-300" />
+      <p class="px-4 text-pretty sm:text-center pt-10 sm:text-xl text-base">
+        En nuestra empresa de telecomunicaciones, ofrecemos una infraestructura
+        robusta y servicios de vanguardia que garantizan una conectividad
+        confiable y veloz. Con un equipo altamente capacitado y soluciones
+        personalizadas, estamos en el lugar correcto para llevar su empresa al
+        siguiente nivel en el mundo de las comunicaciones.
+      </p>
+    </div>
+  </div>
+</div>
