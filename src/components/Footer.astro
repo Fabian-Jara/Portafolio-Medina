@@ -1,0 +1,55 @@
+---
+import FormularioContactoFooter from "./FormularioContactoFooter.astro";
+import FacebookIcon from "./icons/Facebook.astro";
+import InstagramIcon from "./icons/Instagram.astro";
+import TiktokIcon from "./icons/Tiktok.astro";
+
+import Logo from "./icons/Logo.astro";
+---
+
+<div class="flex max-w-[1500px] mx-auto text-gray-100 sm:px-10 px-4">
+  <div class="flex flex-wrap w-full justify-between py-10">
+    <div>
+      <h1 class="sm:text-2xl text-xl sm:text-left text-center">
+        Siguenos en nuestras redes sociales
+      </h1>
+
+      <div
+        class="flex flex-wrap sm:justify-start justify-center space-x-8 pt-6"
+      >
+        <FacebookIcon class="sm:size-12 size-9" />
+        <InstagramIcon class="sm:size-12 size-9" />
+        <TiktokIcon class="sm:size-12 size-9" />
+      </div>
+
+      <div class="flex items-center pt-10">
+        <Logo class="sm:size-64 size-32" />
+        <h1 class="flex text-center flex-col tracking-widest sm:pr-0 pr-2">
+          <span class="sm:text-6xl text-3xl">Serivicos de</span>
+          <span class="sm:text-3xl text-xl font-bold">Telecomunicaciones</span>
+          <span class="sm:text-2xl text-xl">Chile SPA.</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="sm:px-8 sm:pt-0 pt-10">
+      <li><a href="">Sobre Nosotros</a></li>
+      <li><a href="">Proyectos</a></li>
+      <li><a href="">Servicios</a></li>
+      <li><a href="">Inicio</a></li>
+    </div>
+
+    <div class="sm:pt-0 pt-10">
+      <div class="sm:text-xl">
+        <h1>Contáctanos:</h1>
+        <div>
+          <li><a href="">Whatsapp: +56 9 0000 0000</a></li>
+          <li><a href="">Correo: cctv.medina@gmail.com</a></li>
+        </div>
+      </div>
+      <div>
+        <FormularioContactoFooter />
+      </div>
+    </div>
+  </div>
+</div>

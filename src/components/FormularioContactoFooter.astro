@@ -1,0 +1,77 @@
+---
+import EmailIcon from "./icons/Email.astro";
+import UserIcon from "./icons/User.astro";
+---
+
+<form
+  target="_blank"
+  action="https://formsubmit.co/d54fa405dd7d486c5d76e620a4a0a6f7"
+  method="POST"
+  class="flex flex-col py-8"
+>
+  <div class="flex space-x-4">
+    <div>
+      <label for="input-group-1" class="block mb-2 font-medium text-gray-100"
+        >Su Correo</label
+      >
+      <div class="relative mb-6">
+        <div
+          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+        >
+          <EmailIcon />
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="input-group-1"
+          class="bg-gray-50 border border-gray-300 text-gray-950 rounded-lg focus:ring-red-500 focus:border-red-500 block w-full ps-10 p-2.5"
+          placeholder="nombre@correo.com"
+          required
+        />
+      </div>
+    </div>
+    <div>
+      <label for="website-admin" class="block mb-2 font-medium text-gray-100"
+        >Su Nombre</label
+      >
+      <div class="flex mb-6">
+        <span
+          class="inline-flex items-center px-3 text-sm text-gray-100 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md"
+        >
+          <UserIcon />
+        </span>
+        <input
+          type="text"
+          name="name"
+          id="website-admin"
+          class="rounded-none rounded-e-lg bg-gray-50 border text-gray-950 focus:ring-red-500 focus:border-red-500 block flex-1 min-w-0 w-full border-gray-300 p-2.5"
+          placeholder="nombre"
+          required
+        />
+      </div>
+    </div>
+  </div>
+  <label for="website-admin" class="block mb-2 font-medium text-gray-100"
+    >¿Cual es su mensaje?</label
+  >
+  <div class="flex">
+    <span
+      class="inline-flex items-center px-3 text-sm text-gray-100 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md"
+    >
+      <UserIcon />
+    </span>
+    <textarea
+      name="message"
+      id="website-admin"
+      class="rounded-none rounded-e-lg bg-gray-50 border text-gray-950 focus:ring-red-500 focus:border-red-500 block flex-1 min-w-0 w-full border-gray-300 p-2.5"
+      placeholder="Tu mensaje"
+      rows="3"
+      required></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="bg-red-500 p-2 mt-4 rounded-xl hover:bg-red-400 text-gray-100"
+    >Enviar Mensaje</button
+  >
+</form>
