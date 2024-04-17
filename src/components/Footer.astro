@@ -3,6 +3,7 @@ import FormularioContactoFooter from "./FormularioContactoFooter.astro";
 import FacebookIcon from "./icons/Facebook.astro";
 import InstagramIcon from "./icons/Instagram.astro";
 import TiktokIcon from "./icons/Tiktok.astro";
+import BotonContactanos from "../components/BotonContactanos.astro";
 
 import Logo from "./icons/Logo.astro";
 ---
@@ -33,18 +34,25 @@ import Logo from "./icons/Logo.astro";
     </div>
 
     <div class="sm:px-8 sm:pt-0 pt-10">
-      <li><a href="">Sobre Nosotros</a></li>
-      <li><a href="">Proyectos</a></li>
-      <li><a href="">Servicios</a></li>
-      <li><a href="">Inicio</a></li>
+      <li><a href="" class="hover:text-yellow-300">Sobre Nosotros</a></li>
+      <li><a href="" class="hover:text-yellow-300">Proyectos</a></li>
+      <li><a href="" class="hover:text-yellow-300">Servicios</a></li>
+      <li><a href="/#inicio" class="hover:text-yellow-300">Inicio</a></li>
     </div>
 
     <div class="sm:pt-0 pt-10">
       <div class="sm:text-xl">
         <h1>Contáctanos:</h1>
         <div>
-          <li><a href="">Whatsapp: +56 9 0000 0000</a></li>
-          <li><a href="">Correo: cctv.medina@gmail.com</a></li>
+          <li>
+            <a href="" class="hover:text-yellow-300"
+              >Whatsapp: +56 9 0000 0000</a>
+          </li>
+          <li>
+            <BotonContactanos class="hover:text-yellow-300"
+              >Correo: cctv.medina@gmail.com</BotonContactanos
+            >
+          </li>
         </div>
       </div>
       <div>
