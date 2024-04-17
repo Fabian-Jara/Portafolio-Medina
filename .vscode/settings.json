@@ -9,8 +9,5 @@
     "tailwindcss",
     "Videovigilancia",
     "webp"
-  ],
-  "cSpell.enableFiletypes": [
-    "!astro"
   ]
 }
