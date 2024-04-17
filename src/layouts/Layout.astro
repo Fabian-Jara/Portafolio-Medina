@@ -5,6 +5,7 @@ import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 
 import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -30,6 +31,10 @@ const { title, description } = Astro.props;
 
     <slot />
 
+    <div class="bg-gray-900">
+      <Footer />
+    </div>
+
     <script
       is:inline
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
@@ -40,6 +45,9 @@ const { title, description } = Astro.props;
         color-scheme: light;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Onest Variable", sans-serif;
       }
