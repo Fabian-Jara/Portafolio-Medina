@@ -44,7 +44,9 @@ const carruselItems = [
   data-carousel-interval="8000"
 >
   <!-- Carousel wrapper -->
-  <div class="relative h-[500px] sm:h-[750px] overflow-hidden rounded-lg">
+  <div
+    class="relative h-[500px] sm:h-[750px] overflow-hidden rounded-b-lg shadow-xl"
+  >
     {
       carruselItems.map((carrusel) => (
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
